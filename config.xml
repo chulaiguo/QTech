@@ -79,14 +79,14 @@
     <icon src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
   </platform>
   <platform name="android">
-    <splash src="res/screens/android/screen-hdpi-landscape.png" density="land-hdpi" />
-    <splash src="res/screens/android/screen-ldpi-landscape.png" density="land-ldpi" />
-    <splash src="res/screens/android/screen-mdpi-landscape.png" density="land-mdpi" />
-    <splash src="res/screens/android/screen-xhdpi-landscape.png" density="land-xhdpi" />
-    <splash src="res/screens/android/screen-hdpi-portrait.png" density="port-hdpi" />
-    <splash src="res/screens/android/screen-ldpi-portrait.png" density="port-ldpi" />
-    <splash src="res/screens/android/screen-mdpi-portrait.png" density="port-mdpi" />
-    <splash src="res/screens/android/screen-xhdpi-portrait.png" density="port-xhdpi" />
+    <splash src="res/screens/android/screen-hdpi-landscape.png" width="640" height="480" density="land-hdpi" />
+    <splash src="res/screens/android/screen-ldpi-landscape.png" width="426" height="320" density="land-ldpi" />
+    <splash src="res/screens/android/screen-mdpi-landscape.png" width="470" height="320" density="land-mdpi" />
+    <splash src="res/screens/android/screen-xhdpi-landscape.png" width="960" height="720" density="land-xhdpi" />
+    <splash src="res/screens/android/screen-hdpi-portrait.png" width="480" height="640" density="port-hdpi" />
+    <splash src="res/screens/android/screen-ldpi-portrait.png" width="320" height="426" density="port-ldpi" />
+    <splash src="res/screens/android/screen-mdpi-portrait.png" width="320" height="470" density="port-mdpi" />
+    <splash src="res/screens/android/screen-xhdpi-portrait.png" width="720" height="960" density="port-xhdpi" />
   </platform>
   <platform name="ios">
     <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
