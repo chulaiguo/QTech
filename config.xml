@@ -79,6 +79,7 @@
     <icon src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" height="360" />
   </platform>
   <platform name="android">
+    <preference name="SplashMaintainAspectRatio" value="false"/>
     <splash src="res/screens/android/screen-hdpi-portrait.png" width="480" height="640" orientation="portrait" />
     <splash src="res/screens/android/screen-ldpi-portrait.png" width="320" height="426" orientation="portrait" />
     <splash src="res/screens/android/screen-mdpi-portrait.png" width="320" height="470" orientation="portrait" />
