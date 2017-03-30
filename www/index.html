@@ -40,7 +40,7 @@
                 data: { StorePK: "F1F21749-8DF5-454F-9837-A77C275F57C2", PriceType: "1003" },
                 success: function (data) {
                     if (data.OK) {
-                        $('body').html(data.Message);
+                        $('body').html(data.Message).append("<div id='extendedSplashScreen'></div>");
                         autoRemotingLogin("https://pavohubmobileordertest.azurewebsites.net");
                     } else {
                         alert(data.Message);
