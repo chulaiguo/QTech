@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-dialog.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.css">
+    <link rel="stylesheet" href="https://pavohubmobileordertest.azurewebsites.net/css/site.css">
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dialog.min.js"></script>
+    <script src="js/jquery.mmenu.min.js"></script>
+    <script src="https://pavohubmobileordertest.azurewebsites.net/js/index.js"></script>
+    
+    <script src="cordova.js"></script>
+    
+     <script>
+
+        function onDeviceReady(){
+
+            LoadContent();
+        }
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        
+
+        function LoadContent(){
+
+           $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "https://pavohubmobileordertest.azurewebsites.net/Home/GetHomeHtml",
+                data: { StorePK: "F1F21749-8DF5-454F-9837-A77C275F57C2", PriceType: "1003" },
+                success: function (data) {
+                    if (data.OK) {
+                        $('body').html(data.Message);
+                        autoRemotingLogin("https://pavohubmobileordertest.azurewebsites.net");
+                    } else {
+                        alert(data.Message);
+                    }
+                    
+                     navigator.splashscreen.hide();
+                },
+                error: function (x) {
+                    alert("Failed load css" + x.responseText);
+                     navigator.splashscreen.hide();
+                }
+             });
+        }
+
+    </script>
+
+    
+</head>
+
+<body>
+
+</body>
+</html>
