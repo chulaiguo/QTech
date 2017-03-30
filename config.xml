@@ -83,10 +83,10 @@
     <splash src="res/screens/android/screen-ldpi-landscape.png" width="426" height="320" density="land-ldpi" />
     <splash src="res/screens/android/screen-mdpi-landscape.png" width="470" height="320" density="land-mdpi" />
     <splash src="res/screens/android/screen-xhdpi-landscape.png" width="960" height="720" density="land-xhdpi" />
-    <splash src="res/screens/android/screen-hdpi-portrait.png" width="480" height="640" density="port-hdpi" />
-    <splash src="res/screens/android/screen-ldpi-portrait.png" width="320" height="426" density="port-ldpi" />
-    <splash src="res/screens/android/screen-mdpi-portrait.png" width="320" height="470" density="port-mdpi" />
-    <splash src="res/screens/android/screen-xhdpi-portrait.png" width="720" height="960" density="port-xhdpi" />
+    <splash src="res/screens/android/screen-hdpi-portrait.png" width="480" height="640" density="port-hdpi" orientation="portrait" />
+    <splash src="res/screens/android/screen-ldpi-portrait.png" width="320" height="426" density="port-ldpi" orientation="portrait" />
+    <splash src="res/screens/android/screen-mdpi-portrait.png" width="320" height="470" density="port-mdpi" orientation="portrait" />
+    <splash src="res/screens/android/screen-xhdpi-portrait.png" width="720" height="960" density="port-xhdpi" orientation="portrait" />
   </platform>
   <platform name="ios">
     <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
