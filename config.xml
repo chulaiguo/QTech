@@ -3,20 +3,6 @@
 <name>QTech</name>
 <description>Order menu application for customers</description>
 <author>Larry Li</author>
-<platform name="android" >
-<preference name="android-minSdkVersion" value="16"/>
-<preference name="android-targetSdkVersion" value="21"/>
-<preference name="android-installLocation" value="auto"/>
-<preference name="android-signed" value="true"/>
-</platform>
-<platform name="ios" >
-<preference name="ios-configuration" value="production"/>
-<preference name="deployment-target" value="8.0"/>
-</platform>
-<platform name="windows" >
-<preference name="windows-publisher-display-name" value="Larry Li"/>
-<preference name="windows-publisher-id" value="95B308C2-3FC0-4B26-AFF4-E32C35DC1507"/>
-</platform>
 <content src="index.html"/>
 <access origin="*"/>
 <allow-intent href="http://*/*"/>
@@ -31,6 +17,20 @@
 <platform name="ios" >
 <allow-intent href="itms:*"/>
 <allow-intent href="itms-apps:*"/>
+</platform>
+<platform name="android" >
+<preference name="android-minSdkVersion" value="16"/>
+<preference name="android-targetSdkVersion" value="21"/>
+<preference name="android-installLocation" value="auto"/>
+<preference name="android-signed" value="true"/>
+</platform>
+<platform name="ios" >
+<preference name="ios-configuration" value="production"/>
+<preference name="deployment-target" value="8.0"/>
+</platform>
+<platform name="windows" >
+<preference name="windows-publisher-display-name" value="Larry Li"/>
+<preference name="windows-publisher-id" value="95B308C2-3FC0-4B26-AFF4-E32C35DC1507"/>
 </platform>
 <plugin name="cordova-plugin-device" spec="1.1.5"/>
 <plugin name="cordova-plugin-splashscreen" spec="4.0.2"/>
