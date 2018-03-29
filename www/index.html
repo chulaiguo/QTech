@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-control" content="no-cache">
     <title>Home</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -37,7 +38,7 @@
                 type: "get",
                 dataType: "json",
                 url: "https://pavohubmobileordertest.azurewebsites.net/Home/GetHomeHtml",
-                data: { StorePK: "F1F21749-8DF5-454F-9837-A77C275F57C2", PriceType: "1003" },
+                data: { StorePK: "f1f21749-8df5-454f-9837-a77c275f57c2", PriceType: "1003" },
                 success: function (data) {
                     if (data.OK) {
                         $('body').html(data.Message).append("<div id='extendedSplashScreen'></div>");
@@ -49,8 +50,7 @@
                      navigator.splashscreen.hide();
                 },
                 error: function (x) {
-                    alert("Failed load css" + x.responseText);
-                     navigator.splashscreen.hide();
+                     location.reload();
                 }
              });
         }

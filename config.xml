@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="2" ios-CFBundleVersion="1.1.0" windows-packageVersion="1.1.0" version="1.1.0" id = "chekeit.PavoHub.QTech"  >
+<widget xmlns = "http://www.w3.org/ns/widgets"  xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0" android-versionCode="5" ios-CFBundleVersion="1.3.0" windows-packageVersion="1.3.0" version="1.3.0" id = "chekeit.PavoHub.QTech"  >
 <name>QTech</name>
 <description>Order menu application for customers</description>
 <author>Larry Li</author>
@@ -35,16 +35,24 @@
 <plugin name="cordova-plugin-device" spec="1.1.5"/>
 <plugin name="cordova-plugin-splashscreen" spec="4.0.2"/>
 <plugin name="cordova-plugin-camera" spec="2.4.0">
-<variable name="CAMERA_USAGE_DESCRIPTION" value=" "/>
-<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" "/>
+<plugin name="cordova-plugin-statusbar" spec="2.3.0"/>
+<variable name="CAMERA_USAGE_DESCRIPTION" value="Take picture for check in"/>
+<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Take picture for check in"/>
 </plugin>
 <plugin name="cordova-plugin-compat" spec="1.1.0"/>
 <plugin name="cordova-plugin-whitelist" spec="1.3.2"/>
+<platform  name="ios">
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
+    <preference name="StatusBarStyle" value="lightcontent"/>
+</platform>
 <platform name="android">
     <icon src="res/icons/android/icon-36-ldpi.png" density="ldpi" />
     <icon src="res/icons/android/icon-48-mdpi.png" density="mdpi" />
     <icon src="res/icons/android/icon-72-hdpi.png" density="hdpi" />
     <icon src="res/icons/android/icon-96-xhdpi.png" density="xhdpi" />
+    <icon src="res/icons/android/icon-144-xxhdpi.png" density="xxhdpi" />
+    <icon src="res/icons/android/icon-192-xxxhdpi.png" density="xxxhdpi" />
   </platform>
   <platform name="ios">
     <icon src="res/icons/ios/icon-60-3x.png" width="180" height="180" />
